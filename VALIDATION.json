@@ -46,7 +46,16 @@
   "reproducible_package": true,
   "documentation": "English, original author credited, original diagrams labeled as illustrations",
   "github_repository": "https://github.com/fanthomas-creator/portage-simple-durability-tooltip",
-  "github_ci": "Initial publication in progress; see GitHub Actions for live status",
-  "remote_rules": "Configuration in progress; see GitHub Settings for active enforcement",
-  "registry_submission": "not performed"
+  "github_ci": {
+    "workflow": ".github/workflows/ci.yml",
+    "runs_url": "https://github.com/fanthomas-creator/portage-simple-durability-tooltip/actions",
+    "scope": "Formatting, six isolated helper tests and reproducible packaging; not a whole-game build"
+  },
+  "remote_rules": {
+    "settings_url": "https://github.com/fanthomas-creator/portage-simple-durability-tooltip/settings/rules",
+    "policy": "Require reviewed pull requests and checks on main; block force pushes/deletions; restrict release tags to maintainer",
+    "note": "Enforcement is configured on GitHub, not activated by source JSON files"
+  },
+  "registry_submission": "not performed",
+  "public_source_package_reproduction": "passed; cloned public source reproduces the exact signed package SHA256"
 }
