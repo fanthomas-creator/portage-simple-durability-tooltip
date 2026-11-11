@@ -1,0 +1,19 @@
+/target/
+/dist/
+*.log
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db
+# Never commit signing secrets or local credentials.
+*.key
+*.key.*
+*.dpapi
+*.pfx
+*.p12
+.env
+.env.*
+!.env.example
+private/
+signing-private/

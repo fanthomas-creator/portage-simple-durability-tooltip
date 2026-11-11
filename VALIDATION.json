@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-11",
+  "name": "portage-simple-durability-tooltip",
+  "id": "portage_simple_durability_tooltip",
+  "version": "0.1.1",
+  "native_package": {
+    "ok": true,
+    "signed": true,
+    "size": 5347,
+    "sha256": "f7aa8ef7e3b2193e201459ab789a87410410b62ec56b6f5bfa6ca0960b0962d4",
+    "validation": "Official cargo-horizon-mod check with key and signature passed"
+  },
+  "signature": {
+    "public_key": "RWRLiqviZ3I5J7gJBBVbpgKpOHXFBEolu6HF5y5Z43x8jUr8Ooxje7Zl",
+    "signature_file": "portage-simple-durability-tooltip-0.1.1.hnmod.minisig",
+    "minisign_verification": "passed",
+    "official_horizon_verification": "passed",
+    "private_key": "Outside project, Windows CurrentUser DPAPI encrypted; never distributed"
+  },
+  "isolated_helper_tests": {
+    "passed": 6,
+    "failed": 0,
+    "actual_helper_invoked": true,
+    "api_doubles": true,
+    "scope": [
+      "Translated remaining/maximum values and preserved lore",
+      "Disabled mod, advanced tooltips, undamaged and hidden items",
+      "Empty, air, unbreakable and removed components",
+      "Component maximum overrides, invalid values and saturated subtraction",
+      "Missing and non-damageable registry entries",
+      "Duplicate prevention"
+    ],
+    "limitation": "API doubles do not validate actual Horizon types or rendering"
+  },
+  "official_mixin_apply": {
+    "status": "passed",
+    "injections": 2,
+    "modules": 0,
+    "source_revision": "fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca",
+    "original_workspace_modified": false
+  },
+  "full_game_build_for_0_1_1": "not performed",
+  "in_game_test_for_0_1_1": "not performed",
+  "prior_version_evidence": "Initial 0.1.0 helper previously passed cargo check with both ports; no durability-specific gameplay screenshot supplied",
+  "latest_nightly_compatibility": "not checked; exact revisions in compatibility.json only",
+  "reproducible_package": true,
+  "documentation": "English, original author credited, original diagrams labeled as illustrations",
+  "github_repository": "https://github.com/fanthomas-creator/portage-simple-durability-tooltip",
+  "github_ci": "Initial publication in progress; see GitHub Actions for live status",
+  "remote_rules": "Configuration in progress; see GitHub Settings for active enforcement",
+  "registry_submission": "not performed"
+}

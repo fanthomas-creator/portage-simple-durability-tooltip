@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+<rect width="1200" height="600" fill="#111827"/>
+<g font-family="Segoe UI, sans-serif" fill="#f8fafc">
+<text x="48" y="68" font-size="31" font-weight="700">Durability in the item tooltip</text>
+<text x="48" y="113" font-size="23" fill="#a8b5c8">Advanced Tooltips OFF / hover over a damaged item</text>
+<g fill="#1f2937" stroke="#445168" stroke-width="2"><rect x="48" y="155" width="535" height="220"/><rect x="615" y="155" width="535" height="220"/></g>
+<text x="72" y="202" font-size="23" fill="#50dca0">Mod enabled</text>
+<text x="639" y="202" font-size="23" fill="#a8b5c8">Mod disabled</text>
+<g font-family="Consolas, monospace" font-size="27"><text x="72" y="257">Example tool</text><text x="639" y="257">Example tool</text><text x="72" y="310" fill="#a69af9">Durability: 6 / 250</text></g>
+<text x="639" y="312" font-size="19" fill="#a8b5c8">No added durability line</text>
+<text x="48" y="438" font-size="23" fill="#f3cd73">Advanced Tooltips ON</text>
+<text x="48" y="479" font-size="23">The game provides its own line. The mod adds no duplicate.</text>
+<text x="48" y="563" font-size="19" fill="#a8b5c8">DOCUMENTATION ILLUSTRATION - NOT AN IN-GAME SCREENSHOT</text>
+</g></svg>

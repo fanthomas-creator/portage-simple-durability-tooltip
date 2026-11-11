@@ -1,0 +1,38 @@
+name: Bug report
+description: Report a reproducible problem with the Horizon port.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include tokens, account details, private keys or complete unredacted logs. For vulnerabilities, read SECURITY.md."
+  - type: input
+    id: mod_version
+    attributes:
+      label: Mod version
+      placeholder: "0.1.1"
+    validations:
+      required: true
+  - type: input
+    id: horizon_revision
+    attributes:
+      label: Horizon revision and build integration
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Include expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Relevant error excerpt or screenshot
+      description: Remove private information before submitting.

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.png binary
+*.psd binary
+*.hnmod binary
+*.minisig text eol=lf
+*.pub text eol=lf

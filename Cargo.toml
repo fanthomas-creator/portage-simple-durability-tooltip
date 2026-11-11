@@ -1,0 +1,11 @@
+[package]
+name = "portage-simple-durability-tooltip"
+version = "0.1.1"
+edition = "2024"
+license = "MIT"
+publish = false
+autotests = false
+description = "Unofficial community Rust port of Simple Durability Tooltip for Horizon"
+
+[lib]
+path = "tests/tooltip_contract.rs"

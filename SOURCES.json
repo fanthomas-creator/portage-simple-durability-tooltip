@@ -1,0 +1,34 @@
+{
+  "name": "portage-simple-durability-tooltip",
+  "id": "portage_simple_durability_tooltip",
+  "version": "0.1.1",
+  "original": {
+    "name": "Simple Durability Tooltip",
+    "author": "Infinidoge",
+    "license": "MIT",
+    "repository": "https://github.com/Infinidoge/simple-durability-tooltip",
+    "page": "https://modrinth.com/mod/simple-durability-tooltip",
+    "commit": "35cad4b42a6be409e92dedb2093b470f09052031",
+    "adapted_file": "src/main/java/moe/inx/simple_durability_tooltip/mixin/ItemStackMixin.java"
+  },
+  "horizon": {
+    "repository": "https://github.com/horizon-rust/horizon",
+    "commit": "fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca",
+    "license": "MIT",
+    "apis": [
+      "game/native_hooks.rs",
+      "item_tooltip::TooltipDisplay",
+      "text::Text::translate",
+      "item data components"
+    ]
+  },
+  "port": {
+    "maintainer": "fanthomas-creator",
+    "assistance": "Codex",
+    "publication": "https://github.com/fanthomas-creator/portage-simple-durability-tooltip"
+  },
+  "artwork": {
+    "icon.png": "Original abstract durability-bar diagram, not upstream logo",
+    "docs/images/tooltip-example.png": "Original documentation illustration, not an in-game screenshot; no extracted textures/fonts"
+  }
+}
