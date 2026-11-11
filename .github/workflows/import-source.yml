@@ -1,0 +1,39 @@
+name: Import initial project sources
+on:
+  push:
+    branches: [main]
+    paths: [durability-initial-source.zip, .github/workflows/import-source.yml]
+permissions:
+  contents: read
+jobs:
+  import:
+    if: github.actor == 'fanthomas-creator'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify and import reviewed source archive
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import hashlib, zipfile
+          archive = Path('durability-initial-source.zip')
+          assert hashlib.sha256(archive.read_bytes()).hexdigest() == '61d3fbbc73e6200c223d48e23be6cc26b4ca1079e50e8434635f6ed7214b07ec'
+          with zipfile.ZipFile(archive) as z:
+              for item in z.infolist():
+                  p = PurePosixPath(item.filename)
+                  assert not p.is_absolute() and '..' not in p.parts
+                  assert '.git' not in p.parts and not item.filename.startswith('.github/workflows/')
+                  assert p.suffix not in ('.key', '.dpapi', '.pfx', '.p12')
+                  target = Path(*p.parts)
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(z.read(item))
+          PY
+          git rm durability-initial-source.zip
+          git add .
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Import reviewed native mod sources, documentation and repository policies'
+          git push
